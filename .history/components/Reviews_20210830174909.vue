@@ -1,0 +1,21 @@
+<template>
+  <div>
+    <h2>Napísali o nás</h2>
+    <div v-for="review in reviews" :key="review.id" :review="review">
+      {{ review }}
+    </div>
+  </div>
+</template>
+
+<script>
+import { reviews } from '../assets/data'
+export default {
+  data() {
+    return {
+      reviews,
+    }
+  },
+}
+</script>
+
+<style lang="scss" scoped></style>

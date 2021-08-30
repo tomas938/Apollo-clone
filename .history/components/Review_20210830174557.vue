@@ -1,0 +1,19 @@
+<template>
+  <div>
+    <div class="left">
+      <img
+        :src="require(`../assets/reviews/${review.img} || review-1.jpg`)"
+        alt="review"
+      />
+      <span>{{review.}}</span>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: ['review'],
+}
+</script>
+
+<style lang="scss" scoped></style>

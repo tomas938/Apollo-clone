@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 65.5%;
+}
+body {
+  font-size: 2rem;
+}
+.container {
+  max-width: 1440px;
+}
+:root {
+  --main-bg-color: brown;
+}
