@@ -3,7 +3,7 @@
     <h2>Špeciálne ponuky</h2>
     <div class="container">
       <SpecialOffer></SpecialOffer>
-      <SpecialOffer></SpecialOffer>
+      <specialoffer></specialoffer>
     </div>
   </div>
 </template>
