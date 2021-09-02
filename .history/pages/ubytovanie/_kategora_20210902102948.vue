@@ -1,0 +1,24 @@
+<template>
+  <div>
+    <h1>{{ product.title }}}</h1>
+    <h1>{{ product.title }}}</h1>
+    <h1>{{ product.title }}}</h1>
+    <h1>{{ product.title }}}</h1>
+    <h1>{{ product.title }}}</h1>
+    <h1>{{ product.title }}}</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  computed: {
+    product() {
+      return this.$store.getters.getProductById(
+        Number(this.$route.params.kategoria)
+      )
+    },
+  },
+}
+</script>
+
+<style lang="scss" scoped></style>
