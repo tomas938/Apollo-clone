@@ -1,0 +1,28 @@
+<template>
+  <div class="container">
+    <accomodationPageContent :category="category"></accomodationPageContent>
+    <Slider :data="category"></Slider>
+  </div>
+</template>
+
+<script>
+import AccomodationPageContent from '../../components/AccomodationPageContent.vue'
+export default {
+  components: { AccomodationPageContent },
+  data() {
+    return {
+      slide: 0,
+    }
+  },
+  methods: {
+    getIndex(index) {
+      this.slide = index
+    },
+  },
+  computed: {
+    category() {
+      return this.$store.getters.getProductById(Number(this.$route.params.id))
+    },
+  },
+}
+</script>
