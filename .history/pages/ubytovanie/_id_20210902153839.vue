@@ -90,24 +90,25 @@ section {
   grid-auto-columns: 1fr;
   grid-template-rows: 1fr;
   margin-bottom: 3rem;
-  @media only screen and (max-width: 900px) {
-    margin-bottom: 2rem;
-  }
 }
 .small {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 1fr;
+  grid-auto-rows: 10rem;
   grid-gap: 3rem;
   @media only screen and (max-width: 1300px) {
     grid-template-columns: repeat(3, 1fr);
   }
   @media only screen and (max-width: 900px) {
-    grid-gap: 2rem;
+    grid-auto-rows: 15rem;
+    grid-gap: 1.5rem;
   }
   @media only screen and (max-width: 700px) {
     grid-template-columns: repeat(2, 1fr);
   }
+  // @media only screen and (max-width: 400px) {
+  //   grid-template-columns: 1fr;
+  // }
 }
 img {
   cursor: pointer;

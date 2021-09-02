@@ -103,7 +103,7 @@ section {
     grid-template-columns: repeat(3, 1fr);
   }
   @media only screen and (max-width: 900px) {
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
   }
   @media only screen and (max-width: 700px) {
     grid-template-columns: repeat(2, 1fr);

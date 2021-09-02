@@ -96,7 +96,7 @@ section {
 }
 .small {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   grid-gap: 3rem;
   @media only screen and (max-width: 1300px) {
