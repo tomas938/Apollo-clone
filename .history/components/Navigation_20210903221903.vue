@@ -369,19 +369,6 @@ header {
   a {
     color: var(--text);
     text-transform: uppercase;
-    a {
-      color: var(--text);
-      text-transform: uppercase;
-      transition: color 0.3s ease-in;
-      &:active {
-        transition: color 0.3s ease-in;
-        color: var(--heading);
-      }
-      &:hover {
-        transition: color 0.3s ease-in;
-        color: var(--heading);
-      }
-    }
   }
 }
 .active {

@@ -13,7 +13,7 @@
           viewBox="0 0 612 612"
           style="enable-background: new 0 0 612 612"
           xml:space="preserve"
-          fill="#c6a86c"
+          fill="#f1ddb5"
         >
           <g>
             <path
@@ -48,9 +48,10 @@
           <g></g>
           <g></g>
         </svg>
+
         <span>+421 255 968 922</span>
       </div>
-      <div class="mobile" @click="toggleNav()">
+      <div class="mobile" @click="toggleNav()" @click="toggleNav()">
         <span></span>
         <span></span>
         <span></span>
@@ -68,7 +69,7 @@
         >
           <style type="text/css">
             .st0 {
-              fill: #c6a86c;
+              fill: #fff;
             }
           </style>
           <polygon
@@ -169,6 +170,7 @@
         <span>SK</span>
         <svg
           version="1.1"
+          id="Capa_1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px"
@@ -176,7 +178,7 @@
           viewBox="0 0 213.333 213.333"
           style="enable-background: new 0 0 213.333 213.333"
           xml:space="preserve"
-          fill="#54524d"
+          fill="#fff"
         >
           <g>
             <g>
@@ -202,17 +204,17 @@
       </div>
     </div>
     <div class="down-part">
-      <NuxtLink to="/">domov</NuxtLink>
-      <NuxtLink to="/ubytovanie">ubytovanie</NuxtLink>
-      <NuxtLink to="/rezervacia">rezervácia</NuxtLink>
-      <NuxtLink to="/parkovanie">parkovanie</NuxtLink>
-      <NuxtLink to="/restauracia">reštaurácia sv.Huberta</NuxtLink>
-      <NuxtLink to="/eventy">konferenice a eventy</NuxtLink>
-      <NuxtLink to="/wellness">wellness</NuxtLink>
-      <NuxtLink to="/galeria">galéria</NuxtLink>
-      <NuxtLink to="/kontakt">kontakt</NuxtLink>
+      <NuxtLink class="" to="/">domov</NuxtLink>
+      <NuxtLink class="" to="/ubytovanie">ubytovanie</NuxtLink>
+      <NuxtLink class="" to="/rezervacia">rezervácia</NuxtLink>
+      <NuxtLink class="" to="/parkovanie">parkovanie</NuxtLink>
+      <NuxtLink class="" to="/restauracia">reštaurácia sv.Huberta</NuxtLink>
+      <NuxtLink class="" to="/eventy">konferenice a eventy</NuxtLink>
+      <NuxtLink class="" to="/wellnes">wellness</NuxtLink>
+      <NuxtLink class="" to="/galeria">galéria</NuxtLink>
+      <NuxtLink class="" to="/kontakt">kontakt</NuxtLink>
     </div>
-    <div class="mobile-menu" :class="{ active: mobile }" @click="toggleNav()">
+    <div class="mobile-menu" :class="{ active: mobile }">
       <NuxtLink @click="toggleNav()" to="/">domov</NuxtLink>
       <NuxtLink @click="toggleNav()" to="/ubytovanie">ubytovanie</NuxtLink>
       <NuxtLink @click="toggleNav()" to="/rezervacia">rezervácia</NuxtLink>
@@ -247,11 +249,9 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  position: fixed;
-  width: 100%;
+  position: relative;
   z-index: 1;
-  background-color: #fff;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: transparent;
 }
 .top-part {
   max-width: 1440px;
@@ -270,9 +270,9 @@ header {
   gap: 0.5rem;
   display: flex;
   align-items: center;
-  color: var(--heading);
-  font-weight: 400;
+  color: #f1ddb5;
   justify-self: start;
+  font-weight: 400;
   svg {
     width: 4rem;
     height: 4rem;
@@ -325,7 +325,7 @@ header {
     height: 1rem;
   }
   span {
-    color: var(--text);
+    color: #fff;
   }
 }
 .down-part {
@@ -337,10 +337,10 @@ header {
     display: none;
   }
   a {
-    color: var(--text);
+    color: #fff;
     font-size: 1.6rem;
-    text-decoration: none;
     font-weight: 500;
+    text-decoration: none;
     text-transform: uppercase;
     transition: color 0.3s ease-in-out;
     &:hover {
@@ -369,19 +369,6 @@ header {
   a {
     color: var(--text);
     text-transform: uppercase;
-    a {
-      color: var(--text);
-      text-transform: uppercase;
-      transition: color 0.3s ease-in;
-      &:active {
-        transition: color 0.3s ease-in;
-        color: var(--heading);
-      }
-      &:hover {
-        transition: color 0.3s ease-in;
-        color: var(--heading);
-      }
-    }
   }
 }
 .active {

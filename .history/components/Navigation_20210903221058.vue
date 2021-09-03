@@ -212,20 +212,16 @@
       <NuxtLink to="/galeria">galéria</NuxtLink>
       <NuxtLink to="/kontakt">kontakt</NuxtLink>
     </div>
-    <div class="mobile-menu" :class="{ active: mobile }" @click="toggleNav()">
-      <NuxtLink @click="toggleNav()" to="/">domov</NuxtLink>
-      <NuxtLink @click="toggleNav()" to="/ubytovanie">ubytovanie</NuxtLink>
-      <NuxtLink @click="toggleNav()" to="/rezervacia">rezervácia</NuxtLink>
-      <NuxtLink @click="toggleNav()" to="/parkovanie">parkovanie</NuxtLink>
-      <NuxtLink @click="toggleNav()" to="/restauracia"
-        >reštaurácia sv.Huberta</NuxtLink
-      >
-      <NuxtLink @click="toggleNav()" to="/eventy"
-        >konferenice a eventy</NuxtLink
-      >
-      <NuxtLink @click="toggleNav()" to="/wellness">wellness</NuxtLink>
-      <NuxtLink @click="toggleNav()" to="/galeria">galéria</NuxtLink>
-      <NuxtLink @click="toggleNav()" to="/kontakt">kontakt</NuxtLink>
+    <div class="mobile-menu" :class="{ active: mobile }">
+      <NuxtLink to="/">domov</NuxtLink>
+      <NuxtLink to="/ubytovanie">ubytovanie</NuxtLink>
+      <NuxtLink to="/rezervacia">rezervácia</NuxtLink>
+      <NuxtLink to="/parkovanie">parkovanie</NuxtLink>
+      <NuxtLink to="/restauracia">reštaurácia sv.Huberta</NuxtLink>
+      <NuxtLink to="/eventy">konferenice a eventy</NuxtLink>
+      <NuxtLink to="/wellness">wellness</NuxtLink>
+      <NuxtLink to="/galeria">galéria</NuxtLink>
+      <NuxtLink to="/kontakt">kontakt</NuxtLink>
     </div>
   </header>
 </template>
@@ -363,30 +359,15 @@ header {
   padding: 5rem;
   font-size: 2rem;
   gap: 2rem;
-  background-color: #fff;
-  opacity: 0;
-  transition: all 0.7s ease-in-out;
+  background: red;
+  transition: 0.5s ease-in-out;
   a {
     color: var(--text);
     text-transform: uppercase;
-    a {
-      color: var(--text);
-      text-transform: uppercase;
-      transition: color 0.3s ease-in;
-      &:active {
-        transition: color 0.3s ease-in;
-        color: var(--heading);
-      }
-      &:hover {
-        transition: color 0.3s ease-in;
-        color: var(--heading);
-      }
-    }
   }
 }
 .active {
-  opacity: 1;
-  transition: all 0.7s ease-in-out;
-  left: 0%;
+  transition: all 0.5s ease-in-out;
+  left: 0% !important;
 }
 </style>
