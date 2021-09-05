@@ -286,19 +286,6 @@ export const state = () => ({
         'restaurant-11.jpg',
       ],
     },
-    {
-      id: 6,
-      type: 'bar',
-      img: [
-        'bar-1.jpg',
-        'bar-2.jpg',
-        'bar-3.jpg',
-        'bar-4.jpg',
-        'bar-5.jpg',
-        'bar-6.jpg',
-        'bar-7.jpg',
-      ],
-    },
   ],
 })
 export const getters = {
