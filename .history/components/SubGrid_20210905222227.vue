@@ -5,7 +5,7 @@
         <div class="item" v-for="(img, index) in grid.img" :key="index">
           <img
             :src="
-              require(`../assets/detialgallery/${grid.type}/${grid.img[index]}`)
+              require(`../assets/detailgallery/${grid.type}/${grid.img[index]}`)
             "
           />
         </div>
