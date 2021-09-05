@@ -39,12 +39,13 @@ export default {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-
-  builds: [
+ {
+  "builds": [
     {
-      src: 'nuxt.config.js',
-      use: '@nuxtjs/vercel-builder',
-      config: {},
-    },
-  ],
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {}
+    }
+  ]
+}
 }
