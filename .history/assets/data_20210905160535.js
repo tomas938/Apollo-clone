@@ -191,54 +191,24 @@ export const wellnes = [
 ]
 export const gallery = [
   {
-    id: '1',
-    link: 'galeria',
-    type: 'gallery',
-    img: 'gallery-1.jpg',
-    name: 'Konferencie',
+    id: 1,
+    link: 'wellness',
+    type: 'wellness',
+    img: 'wellness-1.jpg',
+    name: 'Masáž',
   },
   {
     id: 2,
-    link: 'galeria',
-    type: 'gallery',
-    img: 'gallery-2.jpg',
-    name: 'Raňajky',
+    link: 'wellness',
+    type: 'wellness',
+    img: 'wellness-2.jpg',
+    name: 'Soľná jaskyňa',
   },
   {
     id: 3,
-    link: 'galeria',
-    type: 'gallery',
-    img: 'gallery-3.jpg',
-    name: 'Izby',
-  },
-  {
-    id: 4,
-    link: 'galeria',
-    type: 'gallery',
-    img: 'gallery-4.jpg',
-    name: 'Apollo hotel',
-  },
-  {
-    id: 5,
-    link: 'galeria',
-    type: 'gallery',
-    img: 'gallery-5.jpg',
-    name: 'Reštaurácia Sv. Huberta',
-  },
-  {
-    id: 6,
-    link: 'galeria',
-    type: 'gallery',
-    img: 'gallery-6.jpg',
-    name: 'Lobby bar a letná terasa',
+    link: 'wellness',
+    type: 'wellness',
+    img: 'wellness-3.jpg',
+    name: 'Fitness centrum',
   },
 ]
-// export const ConferenceSubgrid = [
-//   {
-//     id: '1',
-//     link: 'galeria',
-//     type: 'gallery',
-//     img: 'gallery-1.jpg',
-//     name: 'Konferencie',
-//   },
-// ]

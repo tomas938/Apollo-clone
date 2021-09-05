@@ -1,13 +1,13 @@
 <template>
   <div class="item">
-    <nuxt-link :to="`/${item.link}/${item.id}`" v-if="item.link">
-      <img
-        :src="
-          require(`../assets/${item.type}/${item.img || 'accommodation-1.jpg'}`)
-        "
-        alt=""
-      />
-    </nuxt-link>
+    <!-- <nuxt-link :to="`/${item.link}/${item.id}`" v-if="item.link"> -->
+    <img
+      :src="
+        require(`../assets/${item.type}/${item.img || 'accommodation-1.jpg'}`)
+      "
+      alt=""
+    />
+    <!-- </nuxt-link> -->
     <div class="title" v-if="item.name">
       <nuxt-link :to="`/${item.link}/${item.id}`">{{ item.name }}</nuxt-link>
     </div>

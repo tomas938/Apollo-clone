@@ -233,12 +233,3 @@ export const gallery = [
     name: 'Lobby bar a letná terasa',
   },
 ]
-// export const ConferenceSubgrid = [
-//   {
-//     id: '1',
-//     link: 'galeria',
-//     type: 'gallery',
-//     img: 'gallery-1.jpg',
-//     name: 'Konferencie',
-//   },
-// ]

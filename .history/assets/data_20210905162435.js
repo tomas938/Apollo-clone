@@ -233,12 +233,47 @@ export const gallery = [
     name: 'Lobby bar a letná terasa',
   },
 ]
-// export const ConferenceSubgrid = [
-//   {
-//     id: '1',
-//     link: 'galeria',
-//     type: 'gallery',
-//     img: 'gallery-1.jpg',
-//     name: 'Konferencie',
-//   },
-// ]
+export const subgrids = [
+  {
+    id: '1',
+    link: 'galeria',
+    type: 'gallery',
+    img: 'gallery-1.jpg',
+    name: 'Konferencie',
+  },
+  {
+    id: 2,
+    link: 'galeria',
+    type: 'gallery',
+    img: 'gallery-2.jpg',
+    name: 'Raňajky',
+  },
+  {
+    id: 3,
+    link: 'galeria',
+    type: 'gallery',
+    img: 'gallery-3.jpg',
+    name: 'Izby',
+  },
+  {
+    id: 4,
+    link: 'galeria',
+    type: 'gallery',
+    img: 'gallery-4.jpg',
+    name: 'Apollo hotel',
+  },
+  {
+    id: 5,
+    link: 'galeria',
+    type: 'gallery',
+    img: 'gallery-5.jpg',
+    name: 'Reštaurácia Sv. Huberta',
+  },
+  {
+    id: 6,
+    link: 'galeria',
+    type: 'gallery',
+    img: 'gallery-6.jpg',
+    name: 'Lobby bar a letná terasa',
+  },
+]

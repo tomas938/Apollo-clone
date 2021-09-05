@@ -273,23 +273,6 @@ export const state = () => ({
         'hotel-11.jpg',
       ],
     },
-    {
-      id: 5,
-      type: 'restaurant',
-      img: [
-        'restaurant-1.jpg',
-        'restaurant-2.jpg',
-        'restaurant-3.jpg',
-        'restaurant-4.jpg',
-        'restaurant-5.jpg',
-        'restaurant-6.jpg',
-        'restaurant-7.jpg',
-        'restaurant-8.jpg',
-        'restaurant-9.jpg',
-        'restaurant-10.jpg',
-        'restaurant-11.jpg',
-      ],
-    },
   ],
 })
 export const getters = {

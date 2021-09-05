@@ -208,7 +208,7 @@ export const state = () => ({
   subGrid: [
     {
       id: 1,
-      type: 'conference',
+      type: 'fitness',
       img: [
         'conference-1.jpg',
         'conference-2.jpg',
@@ -222,74 +222,6 @@ export const state = () => ({
         'conference-10.jpg',
       ],
     },
-    {
-      id: 2,
-      type: 'breakfast',
-      img: [
-        'breakfast-1.jpg',
-        'breakfast-2.jpg',
-        'breakfast-3.jpg',
-        'breakfast-4.jpg',
-        'breakfast-5.jpg',
-        'breakfast-6.jpg',
-        'breakfast-7.jpg',
-        'breakfast-8.jpg',
-        'breakfast-9.jpg',
-        'breakfast-10.jpg',
-        'breakfast-11.jpg',
-      ],
-    },
-    {
-      id: 3,
-      type: 'room',
-      img: [
-        'room-1.jpg',
-        'room-2.jpg',
-        'room-3.jpg',
-        'room-4.jpg',
-        'room-5.jpg',
-        'room-6.jpg',
-        'room-7.jpg',
-        'room-8.jpg',
-        'room-9.jpg',
-        'room-10.jpg',
-        'room-11.jpg',
-      ],
-    },
-    {
-      id: 4,
-      type: 'hotel',
-      img: [
-        'hotel-1.jpg',
-        'hotel-2.jpg',
-        'hotel-3.jpg',
-        'hotel-4.jpg',
-        'hotel-5.jpg',
-        'hotel-6.jpg',
-        'hotel-7.jpg',
-        'hotel-8.jpg',
-        'hotel-9.jpg',
-        'hotel-10.jpg',
-        'hotel-11.jpg',
-      ],
-    },
-    {
-      id: 5,
-      type: 'restaurant',
-      img: [
-        'restaurant-1.jpg',
-        'restaurant-2.jpg',
-        'restaurant-3.jpg',
-        'restaurant-4.jpg',
-        'restaurant-5.jpg',
-        'restaurant-6.jpg',
-        'restaurant-7.jpg',
-        'restaurant-8.jpg',
-        'restaurant-9.jpg',
-        'restaurant-10.jpg',
-        'restaurant-11.jpg',
-      ],
-    },
   ],
 })
 export const getters = {
@@ -299,7 +231,7 @@ export const getters = {
   getWellnessById: (state) => (id) => {
     return state.wellnessCategories.find((category) => category.id === id)
   },
-  getSubGridById: (state) => (id) => {
+  getSubGrid: (state) => (id) => {
     return state.subGrid.find((category) => category.id === id)
   },
 }

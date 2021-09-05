@@ -1,10 +1,11 @@
 <template>
   <div>
-    <h1>Galeria</h1>
-    <h1>Galeria</h1>
-    <h1>Galeria</h1>
-    <h1>Galeria</h1>
-    <h1>Galeria</h1>
+    <h1>AAAA</h1>
+    <h1>AAAA</h1>
+    <h1>AAAA</h1>
+    <h1>AAAA</h1>
+    <h1>AAAA</h1>
+    <h1>AAAA</h1>
   </div>
 </template>
 
