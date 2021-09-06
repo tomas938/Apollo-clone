@@ -287,8 +287,8 @@ export const contact = [
     id: 8,
     title: 'Riaditeľ ubytovania',
     name: 'Oľga Šoková',
-    phone: '+421 2 55 968 922',
-    mail: 'olga@apollohotel.sk',
+    phone: ' +421 2 55 969 830',
+    mail: 'eugenl@apollohotel.sk',
   },
 ]
 export const contact2 = [

@@ -1,18 +1,20 @@
 <template>
-  <ContactPageContent
-    :contacts="contacts"
-    :contacts2="contacts2"
-  ></ContactPageContent>
+  <div class="container">
+    <section>
+      <h1>Kontakt</h1>
+      <div v-for="contact in contacts" :key="contact.id">
+        <h2>{{ contact.title }}</h2>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
 import { contact } from '../assets/data'
-import { contact2 } from '../assets/data'
 export default {
   data() {
     return {
       contacts: contact,
-      contacts2: contact2,
     }
   },
 }

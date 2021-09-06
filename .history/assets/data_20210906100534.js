@@ -284,11 +284,11 @@ export const contact = [
     mail: 'alexandra@apollohotel.sk',
   },
   {
-    id: 8,
-    title: 'Riaditeľ ubytovania',
-    name: 'Oľga Šoková',
-    phone: '+421 2 55 968 922',
-    mail: 'olga@apollohotel.sk',
+    id: 2,
+    title: 'F&B manžér',
+    name: 'Eugen Pastierik',
+    phone: ' +421 2 55 969 830',
+    mail: 'eugenl@apollohotel.sk',
   },
 ]
 export const contact2 = [
@@ -322,7 +322,7 @@ export const contact2 = [
       'Spoločnosť zapísaná v OR Okr. Súdu BA I, Oddiel Sro, Vložka č. 2524/B',
   },
   {
-    id: 5,
+    id: 4,
     title: 'Bankové spojenie',
     bank: 'VUB, a.s.',
     adress: 'Mlynske nivy 1',

@@ -266,7 +266,7 @@ export const contact = [
     mail: ' ivona@apollohotel.sk',
   },
   {
-    id: 5,
+    id: 2,
     title: 'Conference & Event manažér',
     name: 'Anna Arpášová',
     mail: 'anna@apollohotel.sk',
@@ -278,17 +278,20 @@ export const contact = [
     mail: 'martina@apollohotel.sk',
   },
   {
-    id: 7,
-    title: 'Revenue manažér',
-    name: 'Alexandra Sadloňová',
-    mail: 'alexandra@apollohotel.sk',
+    id: 2,
+    title: 'F&B manžér',
+    name: 'Eugen Pastierik',
+    phone: ' +421 2 55 969 830',
+    mail: 'eugenl@apollohotel.sk',
   },
   {
-    id: 8,
-    title: 'Riaditeľ ubytovania',
-    name: 'Oľga Šoková',
-    phone: '+421 2 55 968 922',
-    mail: 'olga@apollohotel.sk',
+    id: 4,
+    title: 'Bankové spojenie',
+    bank: 'VUB, a.s.',
+    adress: 'Mlynske nivy 1',
+    town: '829 90 Bratislava',
+    code: 'BIC CODE: SUBASKBX',
+    iban: 'SK76 0200 0000 0015 0044 1042',
   },
 ]
 export const contact2 = [
@@ -321,13 +324,11 @@ export const contact2 = [
     register:
       'Spoločnosť zapísaná v OR Okr. Súdu BA I, Oddiel Sro, Vložka č. 2524/B',
   },
+
   {
     id: 5,
-    title: 'Bankové spojenie',
-    bank: 'VUB, a.s.',
-    adress: 'Mlynske nivy 1',
-    town: '829 90 Bratislava',
-    code: 'BIC CODE: SUBASKBX',
-    iban: 'SK76 0200 0000 0015 0044 1042',
+    title: 'Revenue manažér',
+    name: 'Alexandra Sadloňová',
+    mail: 'alexandra@apollohotel.sk',
   },
 ]
