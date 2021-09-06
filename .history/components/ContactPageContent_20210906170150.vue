@@ -93,7 +93,7 @@ p {
   gap: 3rem;
 }
 .left {
-  width: 50%;
+  width: 30%;
   @media only screen and (max-width: 700px) {
     width: 100%;
   }
