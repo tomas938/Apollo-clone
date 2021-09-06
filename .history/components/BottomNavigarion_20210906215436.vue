@@ -1,0 +1,17 @@
+<template>
+  <div class="bottom"></div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style lang="scss" scoped>
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  background: red;
+}
+</style>
