@@ -51,6 +51,7 @@
             <p v-if="contact.lang">Longitude: {{ contact.lang }}</p>
             <p v-if="contact.lat">Latitude: {{ contact.lat }}</p>
             <p v-if="contact.bank">{{ contact.bank }}</p>
+            <p v-if="contact.name">{{ contact.name }}</p>
             <p v-if="contact.adress">{{ contact.adress }}</p>
             <p v-if="contact.town">{{ contact.town }}</p>
             <p v-if="contact.code">{{ contact.code }}</p>

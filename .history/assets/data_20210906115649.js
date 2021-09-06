@@ -232,6 +232,13 @@ export const gallery = [
     img: 'gallery-6.jpg',
     name: 'Lobby bar a letná terasa',
   },
+  {
+    id: 7,
+    title: 'Riaditeľ ubytovania',
+    name: 'Oľga Šoková',
+    phone: '+421 2 55 968 922',
+    mail: 'olga@apollohotel.sk',
+  },
 ]
 export const contact = [
   {
@@ -246,7 +253,7 @@ export const contact = [
     phone: ' +421 902 944 918, +421 2 55 968 534',
     mail: 'marketing@apollohotel.sk ',
     restriction:
-      '(prosím počas víkendových dní a štátnych sviatkov použite na rezerváciu telefónne číslo)',
+      'prosím počas víkendových dní a štátnych sviatkov použite na rezerváciu telefónne číslo',
   },
   {
     id: 3,
