@@ -88,8 +88,8 @@
           </g>
         </svg>
       </div>
-      <div class="bottom">
-        <input type="text" :placeholder="today()" @click="toggleCal()" />
+      <div class="bottom" @click="close">
+        <input type="text" :placeholder="today()" @click="toggleCal" />
         <input type="text" :placeholder="tommorow()" @click="toggleCal2" />
         <input type="text" placeholder="PROMO KÓD" />
         <button>Overiť dostupnosť</button>

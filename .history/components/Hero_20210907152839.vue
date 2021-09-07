@@ -89,7 +89,7 @@
         </svg>
       </div>
       <div class="bottom">
-        <input type="text" :placeholder="today()" @click="toggleCal()" />
+        <input type="text" :placeholder="today()" @click="toggleCal" />
         <input type="text" :placeholder="tommorow()" @click="toggleCal2" />
         <input type="text" placeholder="PROMO KÓD" />
         <button>Overiť dostupnosť</button>
@@ -125,9 +125,10 @@ export default {
       this.calendarVisible = false
       this.calendar2Visible = false
     },
-    toggleCal() {
+    toggleCal(this.calendarVisible) {
       this.calendarVisible = true
       this.calendar2Visible = false
+      this.$emit('clicked', this.calendarVisible)
     },
     toggleCal2() {
       this.calendar2Visible = true

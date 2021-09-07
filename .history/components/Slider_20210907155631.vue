@@ -1,10 +1,12 @@
 <template>
   <div class="right">
     <div class="big">
-      <img
-        :src="require(`../assets/${data.type}/${data.img[slide]}`)"
-        alt="parking image"
-      />
+      <transition name="slide">
+        <img
+          :src="require(`../assets/${data.type}/${data.img[slide]}`)"
+          alt="parking image"
+        />
+      </transition>
     </div>
     <div class="small">
       <img

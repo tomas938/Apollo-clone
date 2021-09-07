@@ -1,6 +1,10 @@
 <template>
   <main>
-    <img src="../assets/hero.jpg" alt="" @click="close()" />
+    <img
+      src="../assets/hero.jpg"
+      alt=""
+      @click="close(), $emit('clicked', this.calendarVisible)"
+    />
     <div class="reservation">
       <div class="top" @click="close">
         <span>REZERVÁCIA</span>
@@ -89,7 +93,7 @@
         </svg>
       </div>
       <div class="bottom">
-        <input type="text" :placeholder="today()" @click="toggleCal()" />
+        <input type="text" :placeholder="today()" @click="toggleCal" />
         <input type="text" :placeholder="tommorow()" @click="toggleCal2" />
         <input type="text" placeholder="PROMO KÓD" />
         <button>Overiť dostupnosť</button>

@@ -88,7 +88,7 @@
           </g>
         </svg>
       </div>
-      <div class="bottom">
+      <div class="bottom" @click="close()">
         <input type="text" :placeholder="today()" @click="toggleCal()" />
         <input type="text" :placeholder="tommorow()" @click="toggleCal2" />
         <input type="text" placeholder="PROMO KÓD" />

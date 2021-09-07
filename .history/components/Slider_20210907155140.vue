@@ -2,7 +2,7 @@
   <div class="right">
     <div class="big">
       <img
-        :src="require(`../assets/${data.type}/${data.img[slide]}`)"
+        :src="require(`../assets/${data.type}/${data.img[this.slide]}`)"
         alt="parking image"
       />
     </div>
@@ -69,6 +69,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
 }
 h1 {
   padding-top: 0;

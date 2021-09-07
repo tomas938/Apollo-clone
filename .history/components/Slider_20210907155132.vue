@@ -2,7 +2,7 @@
   <div class="right">
     <div class="big">
       <img
-        :src="require(`../assets/${data.type}/${data.img[slide]}`)"
+        :src="require(`../assets/${data.type}/${data.img[this.slide]}`)"
         alt="parking image"
       />
     </div>

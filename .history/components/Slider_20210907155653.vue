@@ -1,10 +1,11 @@
 <template>
   <div class="right">
     <div class="big">
-      <img
-        :src="require(`../assets/${data.type}/${data.img[slide]}`)"
-        alt="parking image"
-      />
+        <img
+          :src="require(`../assets/${data.type}/${data.img[slide]}`)"
+          alt="parking image"
+        />
+      </transition>x
     </div>
     <div class="small">
       <img
@@ -73,4 +74,5 @@ img {
 h1 {
   padding-top: 0;
 }
+
 </style>

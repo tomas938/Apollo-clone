@@ -1,10 +1,12 @@
 <template>
   <div class="right">
     <div class="big">
-      <img
-        :src="require(`../assets/${data.type}/${data.img[slide]}`)"
-        alt="parking image"
-      />
+      <transition name="slide">
+        <img
+          :src="require(`../assets/${data.type}/${data.img[slide]}`)"
+          alt="parking image"
+        />
+      </transition>
     </div>
     <div class="small">
       <img
@@ -72,5 +74,17 @@ img {
 }
 h1 {
   padding-top: 0;
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity 0.7s ease-in-out;
+}
+.slide-enter-from,
+.slide-leave-to {
+  opacity: 0;
+}
+.slide-enter-to,
+.slide-leave-from {
+  opacity: 1;
 }
 </style>

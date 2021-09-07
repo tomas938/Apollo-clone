@@ -2,7 +2,7 @@
   <div class="right">
     <div class="big">
       <img
-        :src="require(`../assets/${data.type}/${data.img[slide]}`)"
+        :src="require(`../assets/${data.type}/${data.img[this.slide]}`)"
         alt="parking image"
       />
     </div>
@@ -41,6 +41,10 @@ export default {
   }
 }
 .big {
+  img {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-rows: 1fr;
@@ -69,6 +73,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 1s ease-in;
 }
 h1 {
   padding-top: 0;
