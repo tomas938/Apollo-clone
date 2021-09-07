@@ -209,8 +209,8 @@ a {
 }
 
 svg {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 .link {
   display: flex;
@@ -230,8 +230,5 @@ svg {
     height: 80%;
     background: #fff;
   }
-}
-span {
-  font-size: 1.3rem;
 }
 </style>

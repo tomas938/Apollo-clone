@@ -215,6 +215,7 @@ svg {
 .link {
   display: flex;
   justify-content: center;
+  gap: 0.5rem;
   align-items: center;
   position: relative;
   width: 100%;

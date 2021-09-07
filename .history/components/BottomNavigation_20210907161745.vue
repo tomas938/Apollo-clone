@@ -194,7 +194,7 @@ export default {}
   justify-items: center;
   bottom: 0;
   width: 100%;
-  height: 7rem;
+  height: 10rem;
   background: var(--heading-text);
   @media only screen and (max-width: 950px) {
     display: grid;
@@ -209,8 +209,8 @@ a {
 }
 
 svg {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
 }
 .link {
   display: flex;
@@ -230,8 +230,5 @@ svg {
     height: 80%;
     background: #fff;
   }
-}
-span {
-  font-size: 1.3rem;
 }
 </style>

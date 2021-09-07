@@ -231,7 +231,4 @@ svg {
     background: #fff;
   }
 }
-span {
-  font-size: 1.3rem;
-}
 </style>
