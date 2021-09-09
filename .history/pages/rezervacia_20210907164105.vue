@@ -21,17 +21,14 @@
             <option value="4">4</option>
           </select>
         </div>
-        <div class="option-item">
-          <label for="rooms">Izby</label>
-          <select id="rooms">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        </div>
+        <label for="rooms">Izby</label>
+        <select id="rooms">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
       </div>
-      <div class="rent-item"></div>
     </section>
   </div>
 </template>
@@ -44,20 +41,9 @@ export default {}
 section {
   flex-direction: column;
 }
-.rent-item {
-  height: 5rem;
-  width: 100%;
-  background: red;
-}
 .options {
   padding: 4rem;
   width: 100%;
   background-color: #f9f9f9;
-  display: flex;
-  gap: 4rem;
-}
-.option-item {
-  display: flex;
-  flex-direction: column;
 }
 </style>

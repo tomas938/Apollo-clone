@@ -31,7 +31,6 @@
           </select>
         </div>
       </div>
-      <div class="rent-item"></div>
     </section>
   </div>
 </template>
@@ -43,11 +42,6 @@ export default {}
 <style lang="scss" scoped>
 section {
   flex-direction: column;
-}
-.rent-item {
-  height: 5rem;
-  width: 100%;
-  background: red;
 }
 .options {
   padding: 4rem;

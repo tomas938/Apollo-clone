@@ -12,10 +12,7 @@
       />
     </nuxt-link>
     <div v-if="item.name" class="title">
-      <nuxt-link
-        :to="`/${item.link}/${item.name.replace(/ /g, '').toLowerCase()}`"
-        >{{ item.name }}</nuxt-link
-      >
+      <nuxt-link :to="`/${item.link}/${item.name}`">{{ item.name }}</nuxt-link>
     </div>
   </div>
 </template>

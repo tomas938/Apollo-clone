@@ -130,7 +130,7 @@ export default {
       this.calendar2Visible = false
     },
     toggleCal2() {
-      this.calendar2Visible = !this.calendar2Visible
+      this.calendar2Visible = !this.calendarVisible
       this.calendarVisible = false
     },
 

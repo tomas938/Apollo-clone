@@ -31,7 +31,6 @@
           </select>
         </div>
       </div>
-      <div class="rent-item"></div>
     </section>
   </div>
 </template>
@@ -44,17 +43,12 @@ export default {}
 section {
   flex-direction: column;
 }
-.rent-item {
-  height: 5rem;
-  width: 100%;
-  background: red;
-}
 .options {
   padding: 4rem;
   width: 100%;
   background-color: #f9f9f9;
   display: flex;
-  gap: 4rem;
+  gap: 8rem;
 }
 .option-item {
   display: flex;

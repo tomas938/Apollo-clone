@@ -1,0 +1,26 @@
+<template>
+  <div class="container">
+    <section>
+      <!-- <accomodationPageContent :category="category"></accomodationPageContent>
+      <Slider :data="category"></Slider> -->
+      {{ category }}
+      {{ category }}
+      {{ category }}
+      {{ category }}
+      {{ category }}
+      {{ category }}
+      {{ category }}
+      {{ category }}
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  computed: {
+    category() {
+      return this.$store.getters.getProductById(Number(this.$route.params.id))
+    },
+  },
+}
+</script>

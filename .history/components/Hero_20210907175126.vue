@@ -122,15 +122,15 @@ export default {
   },
   methods: {
     close() {
-      this.calendarVisible = false
-      this.calendar2Visible = false
-    },
-    toggleCal() {
       this.calendarVisible = !this.calendarVisible
       this.calendar2Visible = false
     },
+    toggleCal() {
+      this.calendarVisible = true
+      this.calendar2Visible = false
+    },
     toggleCal2() {
-      this.calendar2Visible = !this.calendar2Visible
+      this.calendar2Visible = true
       this.calendarVisible = false
     },
 

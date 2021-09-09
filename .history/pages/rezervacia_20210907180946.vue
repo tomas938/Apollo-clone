@@ -45,7 +45,6 @@ section {
   flex-direction: column;
 }
 .rent-item {
-  height: 5rem;
   width: 100%;
   background: red;
 }

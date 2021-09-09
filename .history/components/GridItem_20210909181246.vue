@@ -1,9 +1,6 @@
 <template>
   <div class="item">
-    <nuxt-link
-      v-if="item.link"
-      :to="`/${item.link}/${item.name.replace(/ /g, '').toLowerCase()}`"
-    >
+    <nuxt-link v-if="item.link" :to="`/${item.link}/${item.id}`">
       <img
         :src="
           require(`../assets/${item.type}/${item.img || 'accommodation-1.jpg'}`)
@@ -12,10 +9,7 @@
       />
     </nuxt-link>
     <div v-if="item.name" class="title">
-      <nuxt-link
-        :to="`/${item.link}/${item.name.replace(/ /g, '').toLowerCase()}`"
-        >{{ item.name }}</nuxt-link
-      >
+      <nuxt-link :to="`/${item.link}/${item.id}`">{{ item.name }}</nuxt-link>
     </div>
   </div>
 </template>

@@ -30,8 +30,8 @@
             <option value="4">4</option>
           </select>
         </div>
+        <div class="rent-item"></div>
       </div>
-      <div class="rent-item"></div>
     </section>
   </div>
 </template>
@@ -45,7 +45,6 @@ section {
   flex-direction: column;
 }
 .rent-item {
-  height: 5rem;
   width: 100%;
   background: red;
 }

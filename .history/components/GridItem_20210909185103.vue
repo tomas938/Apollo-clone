@@ -2,7 +2,7 @@
   <div class="item">
     <nuxt-link
       v-if="item.link"
-      :to="`/${item.link}/${item.name.replace(/ /g, '').toLowerCase()}`"
+      :to="`/${item.link}/${item.name.toLowerCase()}`"
     >
       <img
         :src="
@@ -12,10 +12,9 @@
       />
     </nuxt-link>
     <div v-if="item.name" class="title">
-      <nuxt-link
-        :to="`/${item.link}/${item.name.replace(/ /g, '').toLowerCase()}`"
-        >{{ item.name }}</nuxt-link
-      >
+      <nuxt-link :to="`/${item.link}/${item.name}`">{{
+        item.name.toLowerCase()
+      }}</nuxt-link>
     </div>
   </div>
 </template>

@@ -308,19 +308,19 @@ export const state = () => ({
   ],
 })
 export const getters = {
-  getProductByName: (state) => (title) => {
+  getProductById: (state) => (title) => {
     return state.categories.find(
-      (category) => category.title.replace(/ /g, '').toLowerCase() === title
+      (category) => category.title.toLowerCase() === title
     )
   },
-  getWellnessByName: (state) => (title) => {
+  getWellnessById: (state) => (title) => {
     return state.wellnessCategories.find(
-      (category) => category.title.replace(/ /g, '').toLowerCase() === title
+      (category) => category.title.toLowerCase() === title
     )
   },
-  getSubGridByName: (state) => (title) => {
+  getSubGridById: (state) => (title) => {
     return state.subGrid.find(
-      (category) => category.title.replace(/ /g, '').toLowerCase() === title
+      (category) => category.title.toLowerCase() === title
     )
   },
 }
