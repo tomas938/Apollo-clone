@@ -90,10 +90,10 @@
       </div>
       <div class="bottom">
         <input v-b-modal.modal-center type="text" :placeholder="today()" />
-        <input v-b-modal.modal-center type="text" :placeholder="tommorow()" />
+        <Modal></Modal>
+        <input type="text" :placeholder="tommorow()" />
         <input type="text" placeholder="PROMO KÓD" />
         <button>Overiť dostupnosť</button>
-        <Modal></Modal>
       </div>
     </div>
   </main>
@@ -180,7 +180,6 @@ main {
   padding: 3rem;
 }
 input {
-  cursor: auto;
   width: 25%;
   outline: none;
   border: 1px solid var(--input-bg);

@@ -180,7 +180,6 @@ main {
   padding: 3rem;
 }
 input {
-  cursor: auto;
   width: 25%;
   outline: none;
   border: 1px solid var(--input-bg);

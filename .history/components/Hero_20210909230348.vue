@@ -1,9 +1,10 @@
 <template>
   <main>
-    <img src="../assets/hero.jpg" alt="hero" />
+    <img src="../assets/hero.jpg" alt="" @click="close()" />
     <div class="reservation">
       <div class="top" @click="close">
         <span>REZERVÁCIA</span>
+
         <svg
           id="Capa_1"
           enable-background="new 0 0 512.393 512.393"
@@ -89,18 +90,44 @@
         </svg>
       </div>
       <div class="bottom">
-        <input v-b-modal.modal-center type="text" :placeholder="today()" />
-        <input v-b-modal.modal-center type="text" :placeholder="tommorow()" />
+        <input type="text" :placeholder="today()" @click="toggleCal()" />
+        <input type="text" :placeholder="tommorow()" @click="toggleCal2" />
         <input type="text" placeholder="PROMO KÓD" />
         <button>Overiť dostupnosť</button>
-        <Modal></Modal>
+      </div>
+      <div>
+        <div>
+          <b-button v-b-modal.modal-center>Launch centered modal</b-button>
+          <b-modal id="modal-center" centered title="🚨Book🚨">
+            <div class="content">
+              <h3 class="my-4">Rezervujte si termín ešte dnes!!!</h3>
+              <vc-date-picker
+                color="yellow"
+                is-dark
+                is-range
+                :value="null"
+                class="calendar2"
+              />
+            </div>
+          </b-modal>
+        </div>
       </div>
     </div>
   </main>
 </template>
+
 <script>
 export default {
   methods: {
+    showModal() {
+      this.$refs['my-modal'].show()
+    },
+    hideModal() {
+      this.$refs['my-modal'].hide()
+    },
+    toggleModal() {
+      this.$refs['my-modal'].toggle('#toggle-btn')
+    },
     today() {
       const current = new Date()
       const date =
@@ -127,6 +154,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: black;
+    font-weight: bold;
+  }
+}
 .calendar {
   position: absolute;
 }
@@ -180,7 +216,6 @@ main {
   padding: 3rem;
 }
 input {
-  cursor: auto;
   width: 25%;
   outline: none;
   border: 1px solid var(--input-bg);

@@ -4,6 +4,7 @@
     <div class="reservation">
       <div class="top" @click="close">
         <span>REZERVÁCIA</span>
+
         <svg
           id="Capa_1"
           enable-background="new 0 0 512.393 512.393"
@@ -89,15 +90,16 @@
         </svg>
       </div>
       <div class="bottom">
-        <input v-b-modal.modal-center type="text" :placeholder="today()" />
-        <input v-b-modal.modal-center type="text" :placeholder="tommorow()" />
+        <input type="text" :placeholder="today()" />
+        <input type="text" :placeholder="tommorow()" />
         <input type="text" placeholder="PROMO KÓD" />
         <button>Overiť dostupnosť</button>
-        <Modal></Modal>
       </div>
+      <Modal></Modal>
     </div>
   </main>
 </template>
+
 <script>
 export default {
   methods: {
@@ -180,7 +182,6 @@ main {
   padding: 3rem;
 }
 input {
-  cursor: auto;
   width: 25%;
   outline: none;
   border: 1px solid var(--input-bg);
