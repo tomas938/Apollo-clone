@@ -22,7 +22,9 @@ export default {}
   }
   @media only screen and (max-width: 500px) {
     grid-template-columns: 1fr;
-    padding: 0;
+  }
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
   }
 }
 h2 {

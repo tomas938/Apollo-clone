@@ -379,6 +379,7 @@ header {
   }
   span {
     font-weight: 400;
+
     cursor: pointer;
     color: #fff;
   }

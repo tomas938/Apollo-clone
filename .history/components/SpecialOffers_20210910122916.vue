@@ -20,9 +20,11 @@ export default {}
   @media only screen and (max-width: 1200px) {
     grid-template-columns: repeat(2, 1fr);
   }
+  @media only screen and (max-width: 800px) {
+    padding: 0;
+  }
   @media only screen and (max-width: 500px) {
     grid-template-columns: 1fr;
-    padding: 0;
   }
 }
 h2 {

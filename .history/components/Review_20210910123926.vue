@@ -52,6 +52,6 @@ export default {
 }
 h3 {
   color: var(--heading);
-  font-weight: 500;
+  font-weight: bold;
 }
 </style>

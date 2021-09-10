@@ -400,7 +400,7 @@ header {
       transition: color 0.3s ease-in-out;
       &:hover {
         transition: color 0.3s ease-in-out;
-        color: #fff;
+        color: var(--heading);
       }
     }
   }

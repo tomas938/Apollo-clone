@@ -25,12 +25,11 @@ export default {
 <style lang="scss" scoped>
 .reviews {
   padding: 5rem 0rem;
-  padding-bottom: 4rem;
+  margin-bottom: 6rem;
   display: flex;
   gap: 3rem;
   @media only screen and (max-width: 800px) {
     flex-direction: column;
-    padding-top: 2rem;
   }
 }
 h2 {
@@ -42,8 +41,8 @@ h2 {
   @media only screen and (max-width: 1100px) {
     font-size: 3rem;
   }
-  @media only screen and (max-width: 800px) {
-    padding-bottom: 0;
+  @media only screen and (max-width: 1100px) {
+    display: none;
   }
 }
 </style>

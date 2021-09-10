@@ -51,7 +51,7 @@ export default {
   gap: 2.5rem;
 }
 h3 {
-  color: var(--heading);
   font-weight: 500;
+  color: var(--heading);
 }
 </style>
