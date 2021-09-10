@@ -58,16 +58,12 @@ h2 {
   padding: 3rem 0;
 }
 a {
-  font-weight: 400;
   text-decoration: none;
   &:focus,
   &:active {
     outline: none;
     border: none;
     border: 2px dotted var(--heading-text);
-  }
-  &:hover {
-    text-decoration: none;
   }
 }
 li {
