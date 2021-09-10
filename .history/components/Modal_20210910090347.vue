@@ -80,9 +80,5 @@ export default {
   p {
     padding: 0;
   }
-  span {
-    color: #1a202c;
-    font-weight: bold;
-  }
 }
 </style>

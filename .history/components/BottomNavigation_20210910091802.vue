@@ -1,7 +1,7 @@
 <template>
   <div class="bottom">
     <div class="link">
-      <a href="tel:+496170961709">
+      <nuxt-link to="">
         <span>Volať</span>
         <svg
           version="1.1"
@@ -50,7 +50,7 @@
           <g></g>
           <g></g>
         </svg>
-      </a>
+      </nuxt-link>
     </div>
     <div class="link">
       <a
@@ -155,7 +155,7 @@
       </a>
     </div>
     <div class="link">
-      <nuxt-link to="/rezervacia">
+      <nuxt-link to="">
         <span>Rezervácia</span>
         <svg
           fill="#fff"

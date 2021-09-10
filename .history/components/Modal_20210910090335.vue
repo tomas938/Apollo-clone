@@ -66,7 +66,6 @@ export default {
   flex-direction: column;
   align-items: center;
   h3 {
-    margin-bottom: 1rem;
     color: black;
     font-weight: bold;
   }
@@ -79,10 +78,6 @@ export default {
   align-items: center;
   p {
     padding: 0;
-  }
-  span {
-    color: #1a202c;
-    font-weight: bold;
   }
 }
 </style>

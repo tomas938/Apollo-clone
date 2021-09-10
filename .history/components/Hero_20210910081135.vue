@@ -2,7 +2,7 @@
   <main>
     <img src="../assets/hero.jpg" alt="hero" />
     <div class="reservation">
-      <div class="top">
+      <div class="top" @click="close">
         <span>REZERVÁCIA</span>
         <svg
           id="Capa_1"
@@ -89,12 +89,13 @@
         </svg>
       </div>
       <div class="bottom">
-        <input v-b-modal.modal-center type="text" :placeholder="today()" />
+        <input v-b-modal.modal-center type="text" mode: 'date'
+        :placeholder="today()" />
         <input v-b-modal.modal-center type="text" :placeholder="tommorow()" />
         <input type="text" placeholder="PROMO KÓD" />
         <button>Overiť dostupnosť</button>
+        <Modal></Modal>
       </div>
-      <Modal></Modal>
     </div>
   </main>
 </template>
@@ -171,20 +172,17 @@ main {
   }
 }
 .bottom {
-  font-size: 1.5rem;
   width: 100%;
   background: #fff;
   display: flex;
-  gap: 1rem;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   padding: 3rem;
-  font-size: 1.35rem;
 }
 input {
   cursor: auto;
   width: 25%;
-  margin: auto;
   outline: none;
   border: 1px solid var(--input-bg);
   padding: 1.3rem;
@@ -198,8 +196,7 @@ button {
   position: relative;
   width: 25%;
   outline: none;
-  padding: 1.2rem 0rem;
-  padding-right: 2rem;
+  padding: 1.2rem;
   background: var(--button-bg);
   cursor: pointer;
   border: 2px solid var(--heading-page);
@@ -212,7 +209,7 @@ button {
   &:after {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 9%;
     content: '\2192';
     transition: right 0.5s;
     transform: translateY(-50%);

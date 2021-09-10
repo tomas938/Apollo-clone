@@ -199,7 +199,6 @@ button {
   width: 25%;
   outline: none;
   padding: 1.2rem 0rem;
-  padding-right: 2rem;
   background: var(--button-bg);
   cursor: pointer;
   border: 2px solid var(--heading-page);
@@ -212,7 +211,7 @@ button {
   &:after {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 4%;
     content: '\2192';
     transition: right 0.5s;
     transform: translateY(-50%);

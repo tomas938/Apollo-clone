@@ -81,8 +81,7 @@ export default {
     padding: 0;
   }
   span {
-    color: #1a202c;
-    font-weight: bold;
+    color: var(--heading-page);
   }
 }
 </style>

@@ -155,7 +155,7 @@
       </a>
     </div>
     <div class="link">
-      <nuxt-link to="/rezervacia">
+      <nuxt-link to="">
         <span>Rezervácia</span>
         <svg
           fill="#fff"

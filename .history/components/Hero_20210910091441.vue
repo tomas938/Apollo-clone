@@ -212,7 +212,7 @@ button {
   &:after {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 7%;
     content: '\2192';
     transition: right 0.5s;
     transform: translateY(-50%);

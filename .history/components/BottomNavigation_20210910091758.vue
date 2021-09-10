@@ -1,7 +1,7 @@
 <template>
   <div class="bottom">
     <div class="link">
-      <a href="tel:+496170961709">
+      <nuxt-link to="">
         <span>Volať</span>
         <svg
           version="1.1"
@@ -50,11 +50,11 @@
           <g></g>
           <g></g>
         </svg>
-      </a>
+      </nuxt-link>
     </div>
     <div class="link">
       <a
-        href="https://www.google.sk/maps/place/Dulovo+n%C3%A1mestie+1,+810+00+Ru%C5%BEinov/@48.1498409,17.1312073,17z/data=!3m1!4b1!4m5!3m4!1s0x476c8930d4f6149b:0x44eec8416e2127b8!8m2!3d48.1498373!4d17.133396"
+        to="https://www.google.sk/maps/place/Dulovo+n%C3%A1mestie+1,+810+00+Ru%C5%BEinov/@48.1498409,17.1312073,17z/data=!3m1!4b1!4m5!3m4!1s0x476c8930d4f6149b:0x44eec8416e2127b8!8m2!3d48.1498373!4d17.133396"
         target="_blank"
       >
         <span>Mapa</span>
@@ -155,7 +155,7 @@
       </a>
     </div>
     <div class="link">
-      <nuxt-link to="/rezervacia">
+      <nuxt-link to="">
         <span>Rezervácia</span>
         <svg
           fill="#fff"

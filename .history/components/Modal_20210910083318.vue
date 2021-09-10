@@ -13,24 +13,6 @@
             class="calendar2"
           />
         </div>
-        <div class="booking-dates">
-          <p>
-            Rezervácia začína :
-            <span
-              >{{ range.start.getDate() }}.{{ range.start.getMonth() }}.{{
-                range.start.getFullYear()
-              }}</span
-            >
-          </p>
-          <p>
-            Rezervácia končí :
-            <span>
-              {{ range.end.getDate() }}.{{ range.end.getMonth() }}.{{
-                range.end.getFullYear()
-              }}</span
-            >
-          </p>
-        </div>
       </b-modal>
     </div>
   </div>
@@ -39,10 +21,10 @@
 export default {
   data() {
     return {
-      value: '',
+      today: new Date()
       range: {
         start: new Date(),
-        end: new Date(),
+        end: new Date().toISOString().slice(0, 10),
       },
     }
   },
@@ -66,22 +48,7 @@ export default {
   flex-direction: column;
   align-items: center;
   h3 {
-    margin-bottom: 1rem;
     color: black;
-    font-weight: bold;
-  }
-}
-.booking-dates {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  p {
-    padding: 0;
-  }
-  span {
-    color: #1a202c;
     font-weight: bold;
   }
 }

@@ -171,7 +171,6 @@ main {
   }
 }
 .bottom {
-  font-size: 1.5rem;
   width: 100%;
   background: #fff;
   display: flex;
@@ -179,7 +178,6 @@ main {
   justify-content: center;
   align-items: center;
   padding: 3rem;
-  font-size: 1.35rem;
 }
 input {
   cursor: auto;
@@ -198,10 +196,10 @@ button {
   position: relative;
   width: 25%;
   outline: none;
-  padding: 1.2rem 0rem;
-  padding-right: 2rem;
+  padding: 1.2rem;
   background: var(--button-bg);
   cursor: pointer;
+  font-size: 1.7rem;
   border: 2px solid var(--heading-page);
   color: var(--text);
   &:hover {
@@ -212,7 +210,7 @@ button {
   &:after {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 3%;
     content: '\2192';
     transition: right 0.5s;
     transform: translateY(-50%);
