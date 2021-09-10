@@ -166,7 +166,7 @@
         </svg>
       </div>
       <div class="language">
-        <span>{{ lang }}</span>
+        <span>SK</span>
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -200,8 +200,8 @@
           <g></g>
         </svg>
         <div class="choose">
-          <span @click="chanegeLang(secondLang, 2)">{{ secondLang }}</span>
-          <span @click="chanegeLang(thirdLang, 3)">{{ thirdLang }}</span>
+          <span>EN</span>
+          <span>DE</span>
         </div>
       </div>
     </div>
@@ -238,9 +238,6 @@
 export default {
   data() {
     return {
-      lang: 'SK',
-      secondLang: 'EN',
-      thirdLang: 'DE',
       mobile: false,
       scrolledNav: null,
     }
@@ -249,15 +246,6 @@ export default {
     window.addEventListener('scroll', this.upatadeScroll)
   },
   methods: {
-    chanegeLang(lang, order) {
-      if (order === 2) {
-        this.secondLang = this.lang
-      }
-      if (order === 3) {
-        this.thirdLang = this.lang
-      }
-      this.lang = lang
-    },
     toggleNav() {
       this.mobile = !this.mobile
     },
@@ -294,7 +282,11 @@ header {
   margin: auto;
   transition: padding 0.5s ease-in-out;
 }
-
+.phone,
+.logo,
+.language {
+  width: 33%;
+}
 .phone {
   gap: 0.5rem;
   display: flex;
@@ -376,8 +368,6 @@ header {
     height: 1rem;
   }
   span {
-    font-weight: 500;
-    cursor: pointer;
     color: var(--text);
   }
   &:hover .choose {
@@ -392,15 +382,8 @@ header {
     display: flex;
     flex-direction: column;
     span {
-      font-weight: 500;
-      cursor: pointer;
       display: none;
       color: var(--heading);
-      transition: color 0.3s ease-in-out;
-      &:hover {
-        transition: color 0.3s ease-in-out;
-        color: var(--text);
-      }
     }
   }
 }

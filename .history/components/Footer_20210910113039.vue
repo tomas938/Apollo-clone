@@ -79,11 +79,11 @@
           <NuxtLink class="" to="/">Cookies</NuxtLink>
         </div>
       </div>
+      <p>
+        Made with 🤍 2021 icons from
+        <a href="https://www.flaticon.com/"> Flaticon </a>🤍
+      </p>
     </footer>
-    <p>
-      Made with 🤍 2021 icons from
-      <a href="https://www.flaticon.com/"> Flaticon </a>🤍
-    </p>
   </div>
 </template>
 
@@ -209,9 +209,5 @@ p {
   text-align: center;
   color: #54524d;
   font-weight: 500;
-  margin-bottom: 0;
-  @media only screen and (max-width: 950px) {
-    margin-bottom: 5rem;
-  }
 }
 </style>

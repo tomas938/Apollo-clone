@@ -211,7 +211,7 @@ p {
   font-weight: 500;
   margin-bottom: 0;
   @media only screen and (max-width: 950px) {
-    margin-bottom: 5rem;
+    margin-bottom: 0;
   }
 }
 </style>

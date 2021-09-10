@@ -13,7 +13,7 @@
           viewBox="0 0 612 612"
           style="enable-background: new 0 0 612 612"
           xml:space="preserve"
-          fill="#c6a86c"
+          fill="#f1ddb5"
         >
           <g>
             <path
@@ -48,6 +48,7 @@
           <g></g>
           <g></g>
         </svg>
+
         <span>+421 255 968 922</span>
       </div>
       <div class="mobile" @click="toggleNav()">
@@ -66,9 +67,14 @@
           style="enable-background: new 0 0 231.5 58.4"
           xml:space="preserve"
         >
-          <style type="text/css">
+          <style v-if="!scrolledNav" type="text/css">
             .st0 {
-              fill: #c6a86c;
+              fill: #fff;
+            }
+          </style>
+          <style v-else type="text/css">
+            .st0 {
+              fill: #ddc38e;
             }
           </style>
           <polygon
@@ -169,6 +175,7 @@
         <span>{{ lang }}</span>
         <svg
           version="1.1"
+          id="Capa_1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px"
@@ -176,7 +183,7 @@
           viewBox="0 0 213.333 213.333"
           style="enable-background: new 0 0 213.333 213.333"
           xml:space="preserve"
-          fill="#54524d"
+          fill="#fff"
         >
           <g>
             <g>
@@ -206,30 +213,30 @@
       </div>
     </div>
     <div class="down-part">
-      <NuxtLink to="/">domov</NuxtLink>
-      <NuxtLink to="/ubytovanie">ubytovanie</NuxtLink>
-      <NuxtLink to="/rezervacia">rezervácia</NuxtLink>
-      <NuxtLink to="/parkovanie">parkovanie</NuxtLink>
-      <NuxtLink to="/restauracia">reštaurácia sv.Huberta</NuxtLink>
-      <NuxtLink to="/eventy">konferenice a eventy</NuxtLink>
-      <NuxtLink to="/wellness">wellness</NuxtLink>
-      <NuxtLink to="/galeria">galéria</NuxtLink>
-      <NuxtLink to="/kontakt">kontakt</NuxtLink>
+      <NuxtLink class="" to="/">domov</NuxtLink>
+      <NuxtLink class="" to="/ubytovanie">ubytovanie</NuxtLink>
+      <NuxtLink class="" to="/rezervacia">rezervácia</NuxtLink>
+      <NuxtLink class="" to="/parkovanie">parkovanie</NuxtLink>
+      <NuxtLink class="" to="/restauracia">reštaurácia sv.Huberta</NuxtLink>
+      <NuxtLink class="" to="/eventy">konferenice a eventy</NuxtLink>
+      <NuxtLink class="" to="/wellness">wellness</NuxtLink>
+      <NuxtLink class="" to="/galeria">galéria</NuxtLink>
+      <NuxtLink class="" to="/kontakt">kontakt</NuxtLink>
     </div>
-    <div class="mobile-menu" :class="{ active: mobile }" @click="toggleNav()">
-      <NuxtLink to="/" @click="toggleNav()">domov</NuxtLink>
-      <NuxtLink to="/ubytovanie" @click="toggleNav()">ubytovanie</NuxtLink>
-      <NuxtLink to="/rezervacia" @click="toggleNav()">rezervácia</NuxtLink>
-      <NuxtLink to="/parkovanie" @click="toggleNav()">parkovanie</NuxtLink>
-      <NuxtLink to="/restauracia" @click="toggleNav()"
+    <div class="mobile-menu" :class="{ active: mobile }">
+      <NuxtLink @click="toggleNav()" to="/">domov</NuxtLink>
+      <NuxtLink @click="toggleNav()" to="/ubytovanie">ubytovanie</NuxtLink>
+      <NuxtLink @click="toggleNav()" to="/rezervacia">rezervácia</NuxtLink>
+      <NuxtLink @click="toggleNav()" to="/parkovanie">parkovanie</NuxtLink>
+      <NuxtLink @click="toggleNav()" to="/restauracia"
         >reštaurácia sv.Huberta</NuxtLink
       >
-      <NuxtLink to="/eventy" @click="toggleNav()"
+      <NuxtLink @click="toggleNav()" to="/eventy"
         >konferenice a eventy</NuxtLink
       >
-      <NuxtLink to="/wellness" @click="toggleNav()">wellness</NuxtLink>
-      <NuxtLink to="/galeria" @click="toggleNav()">galéria</NuxtLink>
-      <NuxtLink to="/kontakt" @click="toggleNav()">kontakt</NuxtLink>
+      <NuxtLink @click="toggleNav()" to="/wellness">wellness</NuxtLink>
+      <NuxtLink @click="toggleNav()" to="/galeria">galéria</NuxtLink>
+      <NuxtLink @click="toggleNav()" to="/kontakt">kontakt</NuxtLink>
     </div>
   </header>
 </template>
@@ -250,13 +257,10 @@ export default {
   },
   methods: {
     chanegeLang(lang, order) {
-      if (order === 2) {
-        this.secondLang = this.lang
-      }
-      if (order === 3) {
-        this.thirdLang = this.lang
-      }
       this.lang = lang
+      if (order === 2) {
+        this.secondLang = 'SK'
+      }
     },
     toggleNav() {
       this.mobile = !this.mobile
@@ -277,31 +281,27 @@ export default {
 header {
   position: fixed;
   width: 100%;
+  top: 0;
   z-index: 1;
-  background-color: #fff;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: transparent;
   transition: box-shadow 0.5s ease-in-out;
 }
 .top-part {
   max-width: 1440px;
   padding: 3rem 1rem;
-  @media only screen and (max-width: 1100px) {
-    padding: 4rem 1rem;
-  }
+  transition: padding 0.5s ease-in-out;
   position: relative;
   display: flex;
   justify-content: space-between;
   margin: auto;
-  transition: padding 0.5s ease-in-out;
 }
-
 .phone {
   gap: 0.5rem;
   display: flex;
   align-items: center;
-  color: var(--heading);
-  font-weight: 400;
+  color: #f1ddb5;
   justify-self: start;
+  font-weight: 400;
   svg {
     width: 4rem;
     height: 4rem;
@@ -349,13 +349,11 @@ header {
   }
 }
 .logo {
-  transition: all 0.5s ease-in-out;
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translateX(-50%);
   width: 18rem;
-
   @media only screen and (max-width: 1100px) {
     width: 13rem;
     top: 30%;
@@ -371,6 +369,7 @@ header {
   align-items: center;
   justify-content: flex-end;
   gap: 0.5rem;
+  cursor: pointer;
   svg {
     width: 1rem;
     height: 1rem;
@@ -378,7 +377,7 @@ header {
   span {
     font-weight: 500;
     cursor: pointer;
-    color: var(--text);
+    color: #fff;
   }
   &:hover .choose {
     span {
@@ -393,13 +392,12 @@ header {
     flex-direction: column;
     span {
       font-weight: 500;
-      cursor: pointer;
       display: none;
       color: var(--heading);
       transition: color 0.3s ease-in-out;
       &:hover {
         transition: color 0.3s ease-in-out;
-        color: var(--text);
+        color: #fff;
       }
     }
   }
@@ -414,10 +412,10 @@ header {
     display: none;
   }
   a {
-    color: var(--text);
+    color: #fff;
     font-size: 1.5rem;
-    text-decoration: none;
     font-weight: 500;
+    text-decoration: none;
     text-transform: uppercase;
     transition: color 0.3s ease-in-out;
     &:hover {
@@ -438,7 +436,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 5rem;
-  font-size: 1.7rem;
+  font-size: 2rem;
   gap: 2rem;
   background-color: #fff;
   opacity: 0;
@@ -446,18 +444,14 @@ header {
   a {
     color: var(--text);
     text-transform: uppercase;
-    a {
-      color: var(--text);
-      text-transform: uppercase;
+    transition: color 0.3s ease-in;
+    &:active {
       transition: color 0.3s ease-in;
-      &:active {
-        transition: color 0.3s ease-in;
-        color: var(--heading);
-      }
-      &:hover {
-        transition: color 0.3s ease-in;
-        color: var(--heading);
-      }
+      color: var(--heading);
+    }
+    &:hover {
+      transition: color 0.3s ease-in;
+      color: var(--heading);
     }
   }
 }
@@ -466,13 +460,13 @@ header {
   transition: all 0.7s ease-in-out;
   left: 0%;
 }
-.active .mobile span {
-  background: red !important;
-  width: 10rem;
-}
 .scrolled-nav {
+  background-color: #fff;
   box-shadow: 0 13px 57px 0 rgb(0 0 0 / 28%);
   transition: box-shadow 0.5s ease-in-out;
+  header {
+    transition: all 0.5s ease-in-out;
+  }
   .top-part {
     transition: padding 0.5s ease-in-out;
     padding: 1.5rem;
@@ -484,6 +478,20 @@ header {
   .logo {
     transition: all 0.5s ease-in-out;
     top: 15%;
+  }
+  a {
+    color: var(--text);
+  }
+  span {
+    color: var(--text);
+  }
+  #Capa_1 {
+    fill: var(--text);
+  }
+  .phone {
+    span {
+      color: var(--heading);
+    }
   }
 }
 </style>

@@ -209,9 +209,5 @@ p {
   text-align: center;
   color: #54524d;
   font-weight: 500;
-  margin-bottom: 0;
-  @media only screen and (max-width: 950px) {
-    margin-bottom: 5rem;
-  }
 }
 </style>

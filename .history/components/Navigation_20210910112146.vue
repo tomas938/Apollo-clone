@@ -166,7 +166,7 @@
         </svg>
       </div>
       <div class="language">
-        <span>{{ lang }}</span>
+        <span>SK</span>
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -200,8 +200,8 @@
           <g></g>
         </svg>
         <div class="choose">
-          <span @click="chanegeLang(secondLang, 2)">{{ secondLang }}</span>
-          <span @click="chanegeLang(thirdLang, 3)">{{ thirdLang }}</span>
+          <span @click="chanegeLang(secondLang, 2)">EN</span>
+          <span @click="chanegeLang(secondLang, 3)">DE</span>
         </div>
       </div>
     </div>
