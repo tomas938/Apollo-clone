@@ -2,7 +2,6 @@
   <div class="container">
     <section>
       <h1>Rezervácie</h1>
-      <Reservation></Reservation>
       <!-- <div class="options">
         <div class="option-item">
           <label for="adults">Dospelí</label>
