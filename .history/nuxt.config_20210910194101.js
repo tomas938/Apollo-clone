@@ -38,9 +38,6 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
-  bootstrapVue: {
-    componentPlugins: ['ModalPlugin'], // Here you can specify which components you want to load and use
-  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
 

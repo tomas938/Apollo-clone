@@ -27,7 +27,7 @@ img {
 }
 span {
   color: var(--text);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.8rem;
 }
 a {

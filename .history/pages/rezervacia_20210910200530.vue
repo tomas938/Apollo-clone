@@ -3,7 +3,6 @@
     <section>
       <h1>Rezervácie</h1>
       <Reservation></Reservation>
-      <Reservation></Reservation>
     </section>
   </div>
 </template>

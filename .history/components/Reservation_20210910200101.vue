@@ -19,10 +19,10 @@
         <div class="order">
           <span>Izba cena</span>
           <h3 v-if="val === null">{{ price }}€</h3>
-          <h3 v-else>{{ finalPrice }}€</h3>
+          <!-- <h3 v-else>{{ finalPrice }}€</h3> -->
           <div class="option-item">
             <label for="rooms">Vyberte izby</label>
-            <select v-model="val" id="rooms">
+            <select v-model="val" id="rooms" @change="changeVal()">
               <option value="1">1</option>
               <option value="2">2</option>
             </select>
@@ -41,16 +41,16 @@ export default {
       val: null,
     }
   },
-  // methods: {
-  //   changeVal() {
-  //     Number(this.val) * this.price
-  //   },
-  // },
-  computed: {
-    finalPrice() {
-      return Number(this.val) * this.price
+  methods: {
+    changeVal() {
+      console.log(this.val)
     },
   },
+  // computed: {
+  //   finalPrice() {
+  //     return this.price * Number(this.val)
+  //   },
+  // },
 }
 </script>
 

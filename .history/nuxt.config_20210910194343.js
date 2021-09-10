@@ -39,7 +39,8 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
   bootstrapVue: {
-    componentPlugins: ['ModalPlugin'], // Here you can specify which components you want to load and use
+    componentPlugins: ['Collapse', 'Dropdown'], // Here you can specify which components you want to load and use
+    directivePlugins: [], // Here you can specify which directives you want to load and use. Look into official docs to get a list of what's available
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

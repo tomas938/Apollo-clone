@@ -3,6 +3,7 @@
     <img :src="require(`../assets/svgs/${icon}.svg`)" alt="" />
     <span>{{ event }}</span>
     <a :href="path">Viac info </a>
+    <Pagi></Pagi>
   </div>
 </template>
 

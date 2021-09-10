@@ -34,13 +34,14 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     ['bootstrap-vue/nuxt'],
+    bootstrapVue: {
+    components: ['BContainer', 'BRow', 'BCol', 'BFormInput', 'BButton', 'BTable', 'BModal'],
+    directives: ['VBModal', 'VBPopover', 'VBTooltip', 'VBScrollspy']
+  }
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
-  bootstrapVue: {
-    componentPlugins: ['ModalPlugin'], // Here you can specify which components you want to load and use
-  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
 
